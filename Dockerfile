@@ -5,8 +5,7 @@ RUN apk add --no-cache \
     iproute2 \
     tini
 
-RUN adduser -D -u 953 dnsdist \
- && mkdir -p /etc/dnsdist \
+RUN mkdir -p /etc/dnsdist \
  && chown -R dnsdist /etc/dnsdist
 
 EXPOSE 53/udp 53/tcp
