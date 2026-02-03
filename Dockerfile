@@ -10,7 +10,6 @@ RUN mkdir -p /etc/dnsdist \
 
 EXPOSE 53/udp 53/tcp
 
-USER dnsdist
 WORKDIR /etc/dnsdist
 
 ENTRYPOINT ["/sbin/tini","--","/bin/sh","/usr/local/bin/dnsdist.sh"]
