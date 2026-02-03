@@ -11,7 +11,7 @@ permissions:
   packages: write
 
 env:
-  REGISTRY_IMAGE: ghcr.io/nobita309/unbound
+  REGISTRY_IMAGE: ghcr.io/nobita309/dnsdist
 
 jobs:
   previous:
