@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --no-cache dnsdist iproute2 tini
+RUN apk add --no-cache dnsdist iproute2 tini curl
 
 RUN mkdir -p /etc/dnsdist \
  && chown -R dnsdist /etc/dnsdist
