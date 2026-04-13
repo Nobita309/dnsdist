@@ -1,6 +1,11 @@
 FROM alpine:latest
 
-RUN apk add --no-cache dnsdist iproute2 tini curl
+RUN apk add --no-cache --update \
+    --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+    dnsdist \
+    iproute2 \
+    tini \
+    curl
 
 RUN mkdir -p /etc/dnsdist \
  && chown -R dnsdist /etc/dnsdist
